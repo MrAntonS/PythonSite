@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class News(models.Model):
@@ -10,6 +11,9 @@ class News(models.Model):
     is_published = models.BooleanField(default=False, verbose_name="Publised")
     category = models.ForeignKey('Category', on_delete=models.CASCADE, null=True)
 
+    def get_absolute_url(self):
+        return reverse("get_one_news", kwargs={"news_id": self.pk})
+    
 
     def __str__(self):
         return self.title

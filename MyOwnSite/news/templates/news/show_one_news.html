@@ -1,0 +1,17 @@
+{% extends "news/index.html" %}
+
+{% block content %}
+<div class="col-md-10 col-sm-7">
+    <h1>{{ title }}</h1>
+    <div class="card mb-3">
+        <div class="card-header">Category: {{ news.category }}</div>
+        <div class="card-body">
+            <h5 class="card-title">{{ news.title }}</h5>
+            <p class="card-text">
+                {{ news.content|safe|linebreaks }}
+            </p>
+        </div>
+        <div class="card-footer text-muted">{{ news.created_at|timesince }}</div>
+    </div>
+</div>
+{% endblock content %}

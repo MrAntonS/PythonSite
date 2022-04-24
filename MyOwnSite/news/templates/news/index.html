@@ -14,9 +14,9 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ i.title }}</h5>
                     <p class="card-text">
-                        {{ i.content|safe|linebreaks|truncatewords:2 }}
+                        {{ i.content|safe|linebreaks|truncatechars:40 }}
                     </p>
-                    <a href=".?{{ i.title|slugify }}" class="btn btn-primary">Read more...</a>
+                    <a href="{{ i.get_absolute_url }}" class="btn btn-primary">Read more...</a>
                 </div>
                 <div class="card-footer text-muted">{{ i.created_at|timesince }}</div>
             </div>
