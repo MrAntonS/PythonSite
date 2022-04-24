@@ -10,7 +10,7 @@ def is_prime(n):
 
 x = perf_counter()
 num = 0
-for i in range(2, 2500001):
+for i in range(2, 250001):
     num += is_prime(i)
 print(perf_counter() - x)
 print(num)
