@@ -4,5 +4,18 @@
 			"path": ".",
 		}
 	],
-	"settings": {}
+	"settings": {
+		"[html]": {
+			"editor.defaultFormatter": "monosans.djlint"
+		},
+		"[django-html]": {
+			"editor.defaultFormatter": "monosans.djlint"
+		},
+		"[jinja]": {
+			"editor.defaultFormatter": "monosans.djlint"
+		},
+		"[jinja-html]": {
+			"editor.defaultFormatter": "monosans.djlint"
+		},
+	}
 }

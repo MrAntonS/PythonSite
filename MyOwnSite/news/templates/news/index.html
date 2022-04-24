@@ -1,39 +1,25 @@
 {% extends 'base.html' %}
-
 {% block title %}
-  {{ title }} :: {{ block.super }}
+    {{ title }} :: {{ block.super }}
 {% endblock title %}
-
 {% block sidebar %}
-  <div class="col-md-2 col-sm-auto">
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        The current link item
-      </a>
-      <a href="#" class="list-group-item list-group-item-action">A second link item</a>
-      <a href="#" class="list-group-item list-group-item-action">A third link item</a>
-      <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
-    </div>
-  </div>
+    {% include "inc/_sidebar.html" %}
 {% endblock sidebar %}
-
 {% block content %}
-  <div class="col-md-10 col-sm-7">
-    <h1>{{title}}</h1>
-    {% for i in news %}
-      <div class="card mb-3">
-        <div class="card-header">
-          Категории: {{i.category}}
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">{{i.title}}</h5>
-          <p class="card-text">{{i.content|safe|linebreaks|truncatewords:2}}</p>
-          <a href=".?{{i.title|slugify}}" class="btn btn-primary">Read more...</a> 
-        </div>
-        <div class="card-footer text-muted">
-          {{i.created_at|timesince}}
-        </div>    
-      </div>
-    {% endfor %}
-  </div>
+    <div class="col-md-10 col-sm-7">
+        <h1>{{ title }}</h1>
+        {% for i in news %}
+            <div class="card mb-3">
+                <div class="card-header">Category: {{ i.category }}</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ i.title }}</h5>
+                    <p class="card-text">
+                        {{ i.content|safe|linebreaks|truncatewords:2 }}
+                    </p>
+                    <a href=".?{{ i.title|slugify }}" class="btn btn-primary">Read more...</a>
+                </div>
+                <div class="card-footer text-muted">{{ i.created_at|timesince }}</div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock content %}

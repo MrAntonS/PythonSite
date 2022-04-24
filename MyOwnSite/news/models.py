@@ -1,10 +1,4 @@
-from distutils.command.upload import upload
-from statistics import mode
-from tabnanny import verbose
-from tkinter import CASCADE
-from unicodedata import category
 from django.db import models
-from django.forms import DateField
 
 
 class News(models.Model):
