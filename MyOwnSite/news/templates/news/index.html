@@ -10,7 +10,7 @@
         <h1>{{ title }}</h1>
         {% for i in news %}
             <div class="card mb-3">
-                <div class="card-header">Category: {{ i.category }}</div>
+                <div class="card-header">Category: <a href=" {{i.category.get_absolute_url}} " class='text-decoration-none' >{{ i.category }}</a></div> 
                 <div class="card-body">
                     <h5 class="card-title">{{ i.title }}</h5>
                     <p class="card-text">

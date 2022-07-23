@@ -25,6 +25,10 @@ class News(models.Model):
 class Category(models.Model):
     title = models.CharField(max_length=100, db_index=True, verbose_name="Category Name")
     
+    def get_absolute_url(self):
+        return reverse("category", kwargs={"id": self.pk})
+    
+
     def __str__(self):
         return self.title
     
