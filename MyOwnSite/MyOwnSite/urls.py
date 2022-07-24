@@ -23,7 +23,6 @@ from django.urls import path, include, re_path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('news/', include("news.urls")),
-    path('pwa/', include('pwaTest.urls'))
 ]
 
 
