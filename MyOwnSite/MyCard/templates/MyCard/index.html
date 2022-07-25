@@ -1,7 +1,9 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
+
 <head>
+    {% static 'MyCard\css\normalize.css' %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +11,10 @@
     <link rel="stylesheet" href="{% static 'MyCard\css\style.css' %}">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
-        <div class="header_top">
+        <div class="header__top">
             <div class="container">
                 <a href="#">
                     +19843499329
@@ -24,21 +27,23 @@
                 </a>
             </div>
         </div>
-        <div class="header_content">
-            <div class="header__logo">
-                <a href="#">
-                    <img src="img/logo.inc" alt="">
-                </a>
+        <div class="header__content">
+            <div class="container">
+                <div class="header__logo">
+                    <a href="#">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">Главное</a></li>
+                        <li><a href="#">О Компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контактыы</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Главное</a></li>
-                    <li><a href="#">О Компании</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контактыы</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 </body>
+
 </html>
