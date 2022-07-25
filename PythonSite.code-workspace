@@ -1,21 +1,11 @@
 {
-	"folders": [
-		{
-			"path": ".",
-		}
-	],
-	"settings": {
-		"[html]": {
-			"editor.defaultFormatter": "monosans.djlint"
-		},
-		"[django-html]": {
-			"editor.defaultFormatter": "monosans.djlint"
-		},
-		"[jinja]": {
-			"editor.defaultFormatter": "monosans.djlint"
-		},
-		"[jinja-html]": {
-			"editor.defaultFormatter": "monosans.djlint"
-		},
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": false
+    },
 }
