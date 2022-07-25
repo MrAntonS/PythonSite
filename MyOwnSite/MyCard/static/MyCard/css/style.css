@@ -46,11 +46,12 @@ body {
 .header__email {
   color: #cbcacb;
   letter-spacing: 0.25px;
-  line-height: 45px;
+  line-height: 43px;
   position: relative;
 }
 .header__phone {
   font-family: "Oswald", sans-serif;
+  font-size: small;
   padding-left: 20px;
   padding-right: 30px;
 }
