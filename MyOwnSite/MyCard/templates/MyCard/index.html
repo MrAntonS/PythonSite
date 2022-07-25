@@ -2,12 +2,23 @@
 {% load static %}
 <html lang="en">
   <head>
-    {% static 'MyCard\css\normalize.css' %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'MyCard\css\normalize.css' %}" />
-    <link rel="stylesheet" href="{% static 'MyCard\css\style.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Open+Sans&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'MyCard\css\normalize.css' %}?{% now 'U' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'MyCard\css\style.css' %}?{% now 'U' %}"
+    />
     <title>Document</title>
   </head>
 
@@ -15,9 +26,9 @@
     <header class="header">
       <div class="header__top">
         <div class="container">
-          <a href="#"> +19843499329 </a>
-          <a href="#"> mrantonsaenko@gmail.com </a>
-          <a href="#"> Бесплатная Консультация </a>
+          <a class="header__phone" href="tel:19843499329"> +19843499329 </a>
+          <a class="header__email" href="#"> mrantonsaenko@gmail.com </a>
+          <a class="header__btn" href="#"> Бесплатная Консультация </a>
         </div>
       </div>
       <div class="header__content">
@@ -28,7 +39,6 @@
           <nav class="menu">
             <ul>
               <li><a href="#">Главное</a></li>
-              зку
               <li><a href="#">О Компании</a></li>
               <li><a href="#">Услуги</a></li>
               <li><a href="#">Контакты</a></li>
