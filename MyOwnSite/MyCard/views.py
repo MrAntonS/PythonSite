@@ -4,4 +4,5 @@ from django.shortcuts import render
 
 
 def index(request):
+    print("Im doing this just to stay on track bruh")
     return render(request, 'MyCard/index.html')
