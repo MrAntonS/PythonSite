@@ -2,5 +2,5 @@ venv/
 .vscode/
 PythonSite.code-workspace
 MyOwnSite/db.sqlite3
-MyOwnSite/MyOwnSite/settings.py
+MyOwnSite/MyOwnSite/constans.py
 **/__pycache__/
