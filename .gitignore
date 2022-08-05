@@ -3,3 +3,4 @@ venv/
 PythonSite.code-workspace
 MyOwnSite/db.sqlite3
 MyOwnSite/MyOwnSite/settings.py
+**/__pycache__/
