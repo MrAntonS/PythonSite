@@ -1,3 +1,5 @@
 venv/
 .vscode/
 PythonSite.code-workspace
+MyOwnSite\db.sqlite3
+MyOwnSite\MyOwnSite\settings.py
