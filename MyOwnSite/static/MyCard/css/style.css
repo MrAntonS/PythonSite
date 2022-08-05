@@ -22,6 +22,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #5e5e5e;
+  background-color: #303030;
 }
 .header {
   font-family: "Cormorant SC", serif;
@@ -46,11 +47,12 @@ body {
 .header__email {
   color: #cbcacb;
   letter-spacing: 0.25px;
-  line-height: 45px;
+  line-height: 43px;
   position: relative;
 }
 .header__phone {
   font-family: "Oswald", sans-serif;
+  font-size: small;
   padding-left: 20px;
   padding-right: 30px;
 }
